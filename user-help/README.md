@@ -1,38 +1,86 @@
-# Basic help manual
+# Sticky notes extension
 
-## Using the extension
+A GNOME Shell extension providing customizable sticky notes.
 
-**Show/hide all notes:** click on the icon in the GNOME Shell top bar.
+![](./notes@maestroschan.fr/screenshots/about_picture.png)
 
-**Create a note:** click on the "+" button at the left of a note header, it will create a new note, with the same color and the same font size as the note you clicked on.
+### Compatible versions
 
-![](./help_picture_1.png)
+Version 22 has been released the 20/11/2021
 
-**Move a note:** drag the blank space in the center of the note header.
+| GNOME Shell version | Extension version 23 | 22  | 20  | 19  | 18  |
+|---------------------|----------------------|-----|-----|-----|-----|
+| **42**              | Yes                  | No  |     |     |     |
+| **41**              | Yes                  | No  |     |     |     |
+| **40**              | ??                   | No  |     |     |     |
+| **3.38**            |                      | Yes | Yes | Yes |     |
+| **3.36**            |                      | Yes | Yes | Yes | Yes |
+| **3.34**            |                      |     |     | ??  | Yes |
+| **3.32**            |                      |     |     | ??  | Yes |
+| **3.30**            |                      |     |     | ??  | Yes |
 
-**Resize a note:** drag the resize button at the right of the note header.
+### Available languages
 
-**Delete a note:** click on the wastebasket icon and confirm.
 
-## Customizing notes
+| code  | Language name |
+|-------|---------------|
+|       | English       |
+| es    | Castillan     |
+| fr    | French        |
+| hr    | Croatian      |
+| nl    | Dutch         |
+| pt_BR | Brazilian Portuguese |
+| tr    | Turkish       |
+| zh_TW | Chinese (traditional)
 
-**Change color:** click on the menu button, and select a color.
+----
 
-The "Custom color" submenu allows you to select precisely a color.
+## Installation
 
-![](./help_picture_2.png)
+### Recommended
 
-**Change font size:** click on the menu button, and increase or decrease the font size with "+" and "-" buttons.
+It's recommended to install the extension from
+[this website](https://extensions.gnome.org/extension/1357/notes/), or from
+the _GNOME Software_ app if it still can.
 
-**Advanced settings:** click on the "Settings" menu item to access the settings dialog.
+[<img alt="" height="100" src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true">](https://extensions.gnome.org/extension/1357/notes/)
 
-## The settings window
+### Not recommended
 
-The settings dialog window provides several options:
+**Installing unstable code from github means you can have bugs, and you will not
+get updates for the extensions**
 
-**Position of notes:** select whether you want the notes to be shown above the windows or underneath them.
+To install an unstable version, download the files, run `./install.sh`, restart
+the session, and enable the extension.
 
-**Automatic focus:** if this is enabled, the notes will automatically get the keyboard focus when you hover them with the mouse pointer.
+----
 
-**Keyboard shortcut:** hide/show notes with a keyboard shortcut. If this is enabled, the icon in the top bar can be hidden.
+## Storage
+
+Data are stored on your disk: files are in `~/.local/share/notes@maestroschan.fr`
+
+<!-- TODO
+
+si pas de motion ni de release après 1000ms, bouger la note de force (et si
+besoin relâcher le bouton) ⇒ attention justperfection2 m'a donné de quoi ne plus
+faire de la merde en termes de move au moins. (j'y crois moyen mais heh)
+https://old.reddit.com/r/gnome/comments/h08ysq/sticky_notes_extension_now_compatible_with_gnome/fuzz33o/
+https://gitlab.gnome.org/justperfection.channel/gnome-shell-extension-samples/-/blob/master/samples/move-container@example.com/extension.js
+https://www.youtube.com/watch?v=2qVn6CjlDUQ
+
+(à revérifier) pas de raise correct quand on focus une note sans focus automatique
+
+"éditer le titre" dans le menu :
+le bouton de grab aurait le titre en label, et clic-droit enroulerait
+
+
+    -->
+
+<!-- useful commands to develop:
+
+```
+gjs /usr/share/gnome-shell/org.gnome.Shell.Extensions
+gnome-extensions prefs notes@maestroschan.fr
+```
+    -->
 
