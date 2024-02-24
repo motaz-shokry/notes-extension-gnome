@@ -51,5 +51,5 @@ the session, and enable the extension.
 Data are stored on your disk: files are in `~/.local/share/notes@maestroschan-motaz.fr`
 
 ## TODO
-[] Add Arabic Support
+[ ] Add Arabic Support
 
